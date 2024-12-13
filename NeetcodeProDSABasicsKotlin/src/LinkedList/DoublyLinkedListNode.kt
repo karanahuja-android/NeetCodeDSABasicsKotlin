@@ -1,0 +1,4 @@
+package LinkedList
+
+class DoublyLinkedListNode {
+}

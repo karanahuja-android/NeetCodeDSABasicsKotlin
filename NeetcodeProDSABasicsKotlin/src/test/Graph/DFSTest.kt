@@ -1,11 +1,12 @@
 package test.Graph
 
 import Graph.BFS
+import Graph.DFS
 import org.junit.jupiter.api.Test
 
-class BFSTest {
+class DFSTest {
     @Test
-    fun bfs(){
+    fun dfs(){
         val adjMatrix = arrayOf(
             intArrayOf(0,0,0,0,0,0,0),
             intArrayOf(0,0,1,1,0,0,0),
@@ -15,6 +16,6 @@ class BFSTest {
             intArrayOf(0,0,0,0,1,0,0),
             intArrayOf(0,0,0,0,1,0,0)
         )
-        BFS.bfs(adjMatrix,3,7)
+        DFS.dfs(adjMatrix,1,7)
     }
 }

@@ -11,7 +11,7 @@ class InvertBinaryTree {
                     val temp = curr.left
                     curr.left = curr.right
                     curr.right = temp
-                    println(curr.`val`)
+                    println(curr.value)
                     curr.left?.let{currentLevelQueue.add(it)}
                     curr.right?.let{currentLevelQueue.add(it)}
                 }

@@ -11,7 +11,7 @@ class BFS {
                 val numNodes = currentRowQueue.size
                 for (i in 0 until numNodes){
                     val currentNode = currentRowQueue.removeFirst()
-                    println(currentNode.`val`)
+                    println(currentNode.value)
                     currentNode.left?.let{currentRowQueue.add(it)}
                     currentNode.right?.let{currentRowQueue.add(it)}
                 }

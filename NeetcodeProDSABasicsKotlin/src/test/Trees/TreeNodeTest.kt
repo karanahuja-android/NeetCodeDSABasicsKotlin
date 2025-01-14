@@ -10,8 +10,8 @@ class TreeNodeTest {
         var tRight = TreeNode(6)
         tRoot.left = tLeft
         tRoot.right = tRight
-        Assertions.assertEquals(tRoot.`val`,4)
-        Assertions.assertEquals(tRoot.left!!.`val`,3)
-        Assertions.assertEquals(tRoot.right!!.`val`,6)
+        Assertions.assertEquals(tRoot.value,4)
+        Assertions.assertEquals(tRoot.left!!.value,3)
+        Assertions.assertEquals(tRoot.right!!.value,6)
     }
 }

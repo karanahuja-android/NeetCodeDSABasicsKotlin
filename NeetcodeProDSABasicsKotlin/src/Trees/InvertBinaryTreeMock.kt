@@ -5,7 +5,7 @@ class InvertBinaryTreeMock {
         fun invertBinaryTree(root:TreeNode?){
             if(root == null)
                 return
-            println(root?.`val`)
+            println(root?.value)
             val temp = root?.left
             root?.left = root?.right
             root?.right = temp

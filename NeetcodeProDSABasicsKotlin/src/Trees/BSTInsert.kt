@@ -5,8 +5,8 @@ class BSTInsert {
         fun insert(root:TreeNode?,insertValue:Int):TreeNode?{
             when{
                 root == null -> return TreeNode(insertValue)
-                insertValue > root.`val` -> root.right = insert(root.right,insertValue)
-                insertValue < root.`val` -> root.left = insert(root.left,insertValue)
+                insertValue > root.value -> root.right = insert(root.right,insertValue)
+                insertValue < root.value -> root.left = insert(root.left,insertValue)
             }
             return root
 

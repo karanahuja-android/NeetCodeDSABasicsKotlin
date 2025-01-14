@@ -1,6 +1,6 @@
 package Trees
 
-class TreeNode(var `val`:Int) {
+class TreeNode(var value:Int) {
     var left:TreeNode? = null
     var right:TreeNode? = null
 }

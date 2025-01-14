@@ -8,7 +8,7 @@ class BSTTraversal {
                 if(root == null)
                     return
                 traverse(root.left)
-                outputList.add(root.`val`)
+                outputList.add(root.value)
                 traverse(root.right)
             }
             traverse(root)
@@ -18,7 +18,7 @@ class BSTTraversal {
             if(root == null)
                 return
             inOrderTraversal(root.left)
-            println(root.`val`)
+            println(root.value)
             inOrderTraversal(root.right)
 
         }
@@ -26,7 +26,7 @@ class BSTTraversal {
         fun preOrderTraversal(root:TreeNode?){
             if(root == null)
                 return
-            println(root.`val`)
+            println(root.value)
             preOrderTraversal(root.left)
             preOrderTraversal(root.right)
         }
@@ -36,7 +36,7 @@ class BSTTraversal {
                 return
             postOrderTraversal(root.left)
             postOrderTraversal(root.right)
-            println(root.`val`)
+            println(root.value)
         }
     }
 
